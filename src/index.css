@@ -1,3 +1,8 @@
+:root {
+  --light: #F8F8F8;
+  --dark: #252525;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,29 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.bg-text1{
+  background-image: url(./assets/banner-1.png);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.bg-text2{
+  background-image: url(./assets/banner-2.png);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.feature{
+  border-left: #e4b723 2px solid;
+}
+
+.foot{
+  border-top: #F8F8F8 2px solid;
+}
+
+.navs:hover{
+  background: #e2ddcd;
 }
