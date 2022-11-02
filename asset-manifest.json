@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/Technical-Test-StarWork-Crypto-Market-Using-API/static/css/main.61ffc30f.css",
-    "main.js": "/Technical-Test-StarWork-Crypto-Market-Using-API/static/js/main.c4cbc452.js",
+    "main.css": "/Technical-Test-StarWork-Crypto-Market-Using-API/static/css/main.0a714d87.css",
+    "main.js": "/Technical-Test-StarWork-Crypto-Market-Using-API/static/js/main.81687fd8.js",
     "static/media/banner-1.png": "/Technical-Test-StarWork-Crypto-Market-Using-API/static/media/banner-1.7f891e132d202cf736be.png",
     "static/media/banner-2.png": "/Technical-Test-StarWork-Crypto-Market-Using-API/static/media/banner-2.bc98d8550f9f7c92257e.png",
+    "static/media/logo.png": "/Technical-Test-StarWork-Crypto-Market-Using-API/static/media/logo.8832ea1a2bcce4d3613b.png",
     "static/media/icon-1.png": "/Technical-Test-StarWork-Crypto-Market-Using-API/static/media/icon-1.05d674cec474afc24fd2.png",
     "static/media/icon-2.png": "/Technical-Test-StarWork-Crypto-Market-Using-API/static/media/icon-2.7aa5dc2f56de8004aa27.png",
     "static/media/icon-3.png": "/Technical-Test-StarWork-Crypto-Market-Using-API/static/media/icon-3.83138a6bc48e5999288b.png",
     "static/media/icon-4.png": "/Technical-Test-StarWork-Crypto-Market-Using-API/static/media/icon-4.0a6172d62496fba91f6b.png",
     "index.html": "/Technical-Test-StarWork-Crypto-Market-Using-API/index.html",
-    "main.61ffc30f.css.map": "/Technical-Test-StarWork-Crypto-Market-Using-API/static/css/main.61ffc30f.css.map",
-    "main.c4cbc452.js.map": "/Technical-Test-StarWork-Crypto-Market-Using-API/static/js/main.c4cbc452.js.map"
+    "main.0a714d87.css.map": "/Technical-Test-StarWork-Crypto-Market-Using-API/static/css/main.0a714d87.css.map",
+    "main.81687fd8.js.map": "/Technical-Test-StarWork-Crypto-Market-Using-API/static/js/main.81687fd8.js.map"
   },
   "entrypoints": [
-    "static/css/main.61ffc30f.css",
-    "static/js/main.c4cbc452.js"
+    "static/css/main.0a714d87.css",
+    "static/js/main.81687fd8.js"
   ]
 }
