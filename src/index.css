@@ -1,6 +1,12 @@
 :root {
-  --light: #F8F8F8;
-  --dark: #252525;
+  --light: #fdfdfd;
+  --dark: #151327;
+  --darkess: #232021;
+  --warning: #dfad25;
+  --blue: #23346d;
+  --dark-blue: #26387e;
+  --dark-red: #c11c67;
+  --dark-green: #0d8d65;
 }
 
 body {
@@ -18,13 +24,23 @@ code {
 }
 
 .bg-text1{
-  background-image: url(./assets/banner-1.png);
+  background: 
+				linear-gradient(
+				  rgba(0, 0, 0, 0.8),
+				  rgba(8, 8, 8, 0.8)
+				),
+			    url(./assets/banner-1.png) no-repeat;
   width: 100%;
   height: 100vh;
   background-size: cover;
 }
 .bg-text2{
-  background-image: url(./assets/banner-2.png);
+  background: 
+				linear-gradient(
+				  rgba(0, 0, 0, 0.8),
+				  rgba(8, 8, 8, 0.8)
+				),
+			    url(./assets/banner-2.png) no-repeat;
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -38,6 +54,105 @@ code {
   border-top: #F8F8F8 2px solid;
 }
 
+.navs{
+  color: var(--warning);
+  text-decoration: none;
+}
 .navs:hover{
-  background: #e2ddcd;
+  background: #f0efef;
+}
+
+/* Font size */
+.heading1{
+  font-size: 72px;
+}
+.heading2{
+  font-size: 63px;
+}
+.heading3{
+  font-size: 45px;
+}
+.heading4{
+  font-size: 36px;
+}
+.heading5{
+  font-size: 27px;
+}
+.heading6{
+  font-size: 18px;
+}
+
+/* Font Weight */
+.light{
+  font-weight: 300;
+}
+.regular{
+  font-weight: 500;
+}
+.bold{
+  font-weight: 700;
+}
+
+/* Font color */
+.color-warning{
+  color: var(--warning);
+}
+.color-light{
+  color: var(--light);
+}
+.color-primary{
+  color: var(--dark-blue);
+}
+.color-info{
+  color: var(--blue);
+}
+.color-danger{
+  color: var(--dark-red);
+}
+.color-success{
+  color: var(--dark-green);
+}
+.color-dark{
+  color: var(--darkess);
+}
+
+.bg-darkness{
+  background: var(--dark);
+}
+
+.navs1{
+  text-decoration: none;
+  color: var(--dark);
+  background: var(--warning);
+  border-radius: 40%;
+
+}
+
+.navs1:hover{
+  background: #f0efef;
+  border-radius: 40%;
+}
+
+
+/* Inactive tab */
+.myClass ul > li > a {
+  background-color: white;
+  color: red;
+}
+.myClass ul > li > a:hover {
+  background-color: pink;
+}
+
+/* Active tab */
+.myClass ul > li.active > a,
+.myClass ul > li.active > a:hover,
+.myClass ul > li.active > a:focus {
+  background-color: red;
+  color: white;
+}
+
+/* Disabled tab */
+.myClass ul > li.disabled > a {
+  background-color: lightgray;
+  color: darkgray;
 }

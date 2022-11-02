@@ -7,49 +7,49 @@ function Footer (){
     return(
         <div className='container py-5'>
             <Row className='pb-5'>
-                <Col md>
-                    <h4 className='text-warning'>About us</h4>
-                    <h6 className='text-light'>About</h6>
-                    <h6 className='text-light'>Terms</h6>
-                    <h6 className='text-light'>Privacy</h6>
-                    <h6 className='text-light'>Fees</h6>
-                    <h6 className='text-light'>Careers</h6>
-                    <h6 className='text-light'>Announcements</h6>
-                    <h6 className='text-light'>Referral</h6>
-                    <h6 className='text-light'>About Us</h6>
+                <Col md className='d-flex flex-column align-items-center align-items-lg-start  justify-content-center justify-content-lg-start'>
+                    <h4 className='heading4 bold color-warning'>About Us</h4>
+                    <h5 className='heading6 light color-light'>About</h5>
+                    <h5 className='heading6 light color-light'>Terms</h5>
+                    <h5 className='heading6 light color-light'>Privacy</h5>
+                    <h5 className='heading6 light color-light'>Fees</h5>
+                    <h5 className='heading6 light color-light'>Careers</h5>
+                    <h5 className='heading6 light color-light'>Announcements</h5>
+                    <h5 className='heading6 light color-light'>Referral</h5>
+                    <h5 className='heading6 light color-light'>About Us</h5>
                 </Col>
                 <Col md>
-                    <h4 className='text-warning'>Product</h4>
-                    <h6 className='text-light'>About</h6>
-                    <h6 className='text-light'>Terms</h6>
-                    <h6 className='text-light'>Privacy</h6>
-                    <h6 className='text-light'>Fees</h6>
-                    <h6 className='text-light'>Careers</h6>
-                    <h6 className='text-light'>Announcements</h6>
-                    <h6 className='text-light'>Referral</h6>
-                    <h6 className='text-light'>About Us</h6>
+                    <h4 className='heading4 bold color-warning'>Product</h4>
+                    <h5 className='heading6 light color-light'>About</h5>
+                    <h5 className='heading6 light color-light'>Terms</h5>
+                    <h5 className='heading6 light color-light'>Privacy</h5>
+                    <h5 className='heading6 light color-light'>Fees</h5>
+                    <h5 className='heading6 light color-light'>Careers</h5>
+                    <h5 className='heading6 light color-light'>Announcements</h5>
+                    <h5 className='heading6 light color-light'>Referral</h5>
+                    <h5 className='heading6 light color-light'>About Us</h5>
                 </Col>
                 <Col md>
-                    <h4 className='text-warning'>Service</h4>
-                    <h6 className='text-light'>About</h6>
-                    <h6 className='text-light'>Terms</h6>
-                    <h6 className='text-light'>Privacy</h6>
-                    <h6 className='text-light'>Fees</h6>
-                    <h6 className='text-light'>Careers</h6>
-                    <h6 className='text-light'>Announcements</h6>
-                    <h6 className='text-light'>Referral</h6>
-                    <h6 className='text-light'>About Us</h6>
+                    <h4 className='heading4 bold color-warning'>Servicec</h4>
+                    <h5 className='heading6 light color-light'>About</h5>
+                    <h5 className='heading6 light color-light'>Terms</h5>
+                    <h5 className='heading6 light color-light'>Privacy</h5>
+                    <h5 className='heading6 light color-light'>Fees</h5>
+                    <h5 className='heading6 light color-light'>Careers</h5>
+                    <h5 className='heading6 light color-light'>Announcements</h5>
+                    <h5 className='heading6 light color-light'>Referral</h5>
+                    <h5 className='heading6 light color-light'>About Us</h5>
                 </Col>
                 <Col md>
-                    <h4 className='text-warning'>Support</h4>
-                    <h6 className='text-light'>About</h6>
-                    <h6 className='text-light'>Terms</h6>
-                    <h6 className='text-light'>Privacy</h6>
-                    <h6 className='text-light'>Fees</h6>
-                    <h6 className='text-light'>Careers</h6>
-                    <h6 className='text-light'>Announcements</h6>
-                    <h6 className='text-light'>Referral</h6>
-                    <h6 className='text-light'>About Us</h6>
+                    <h4 className='heading4 bold color-warning'>Support</h4>
+                    <h5 className='heading6 light color-light'>About</h5>
+                    <h5 className='heading6 light color-light'>Terms</h5>
+                    <h5 className='heading6 light color-light'>Privacy</h5>
+                    <h5 className='heading6 light color-light'>Fees</h5>
+                    <h5 className='heading6 light color-light'>Careers</h5>
+                    <h5 className='heading6 light color-light'>Announcements</h5>
+                    <h5 className='heading6 light color-light'>Referral</h5>
+                    <h5 className='heading6 light color-light'>About Us</h5>
                 </Col>
             </Row>
             <div className='d-flex flex-column align-items-center justify-content-center text-warning'>
