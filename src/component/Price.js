@@ -7,22 +7,16 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 function Price (){
     const [starx, setStarX] = useState([]);
     const [usdt, setUSDT] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const [posts, setPosts] = useState([]);
-    const [searchTitle, setSearchTitle] = useState("");
+    const [query, setQuery] = useState("");
+    const [data, setData] = useState([]);
   
     useEffect(() => {
-      const loadPosts = async () => {
-        setLoading(true);
-        const response = await axios.get(
-          "https://fe-test-api.starworksglobal.com/price/search?q=USDT"
-        );
-        setPosts(response.data);
-        setLoading(false);
+      const fetchData = async () => {
+        const res = await axios.get(`https://fe-test-api.starworksglobal.com/price/search?q=${query}`);
+        setData(res.data);
       };
-  
-      loadPosts();
-    }, []);
+      if (query.length === 0 || query.length > 0) fetchData();
+    }, [query]);
 
 
     useEffect(() => {
@@ -85,8 +79,7 @@ function Price (){
             </Tab>
 
 
-
-
+            
             <Tab eventKey="usdt" title="USDT Markets" className='mb-5'>
                 <div className='container'>
                     <Table striped bordered hover responsive>
@@ -120,31 +113,42 @@ function Price (){
             <Tab eventKey="favorites" title="Favorites" disabled>
                 <h1>test 2</h1>
             </Tab>
-            <Tab eventKey="search" title="Search" disabled>
+            <Tab eventKey="search" title="Search" >
                 <Container className='py-5 text-center' >
                     <input
-                        style={{ width: "30%", height: "25px" }}
-                        type="text"
-                        placeholder="Search..."
-                        onChange={(e) => setSearchTitle(e.target.value)}
+                        className="search"
+                        placeholder="USDT"
+                        onChange={(e) => setQuery(e.target.value.toUpperCase())}
+                        className='mb-5'
                     />
-                    {loading ? (
-                        <h4>Loading ...</h4>
-                    ) : (
-                        posts
-                        .filter((value) => {
-                            if (searchTitle === "") {
-                                return value;
-                            } else if (
-                                value.title.toLowerCase().includes(searchTitle.toLowerCase())
-                            ) {
-                            return value;
-                            }
-                        })
-                        .map((item) => <h5 key={item.pair}>{item.pair}</h5>)
-                    )}
+                    
+                    <Table striped bordered hover responsive>
+                        <thead>
+                            <tr className='text-center'>
+                                <th></th>
+                                <th><h5 className='heading5 bold color-warning'>PAIR</h5></th>
+                                <th><h5 className='heading5 bold color-warning'>LAST PRICE</h5></th>
+                                <th><h5 className='heading5 bold color-warning'>24H HIGH</h5></th>
+                                <th><h5 className='heading5 bold color-warning'>24H LOW</h5></th>
+                                <th><h5 className='heading5 bold color-warning'>24H CHANGE</h5></th>
+                                <th><h5 className='heading5 bold color-warning'>24H VOLUME</h5></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {data.map((starX) => (
+                            <tr  className='text-center'>
+                                <FontAwesomeIcon icon={faStar} size="1x"></FontAwesomeIcon>
+                                <td><h5 className='heading6 light color-info'>{starX.pair}</h5></td>
+                                <td><h5 className='heading6 light color-info'>{starX.lastPrice}</h5></td>
+                                <td><h5 className='heading6 light color-info'>{starX.high24}</h5></td>
+                                <td><h5 className='heading6 light color-info'>{starX.low24}</h5></td>
+                                <td><h5 className='heading6 light color-info'>{starX.change24}</h5></td>
+                                <td><h5 className='heading6 light color-info'>{starX.volume24}</h5></td>
+                            </tr>
+                        ))}
+                        </tbody>
+                    </Table>
                 </Container>
-                
             </Tab>
         </Tabs>
     );
